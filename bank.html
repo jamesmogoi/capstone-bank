@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account System</title>
+    <link rel="stylesheet" href="css/bank.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bank Account System</h1>
+
+        <div class="account-section">
+            <h2>Account Information</h2>
+            <p>Account Number: <span id="account-number">12345</span></p>
+            <p>Account Holder: <span id="account-holder">Alice</span></p>
+            <p>Balance: $<span id="balance">0.00</span></p>
+        </div>
+
+        <div class="transaction-section">
+            <h2>Transactions</h2>
+            <div>
+                <h3>Deposit</h3>
+                <input type="number" id="deposit-amount" placeholder="Amount">
+                <button onclick="deposit()">Deposit</button>
+            </div>
+            <div>
+                <h3>Withdraw</h3>
+                <input type="number" id="withdraw-amount" placeholder="Amount">
+                <button onclick="withdraw()">Withdraw</button>
+            </div>
+        </div>
+
+        <div class="transfer-section">
+            <h2>Transfer</h2>
+            <input type="text" id="transfer-account" placeholder="To Account Number">
+            <input type="number" id="transfer-amount" placeholder="Amount">
+            <button onclick="transfer()">Transfer</button>
+        </div>
+
+        <div class="history-section">
+            <h2>Transaction History</h2>
+            <ul id="transaction-history"></ul>
+        </div>
+    </div>
+
+    <script src="bank.js"></script>
+</body>
+
+</html>
