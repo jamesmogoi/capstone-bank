@@ -41,8 +41,7 @@ class BankAccount {
     }
 }
 
-// Initialize account
-let account = new BankAccount("12345", "Alice");
+let account = new BankAccount("2334734", "Henry");
 
 function updateDisplay() {
     document.getElementById("balance").innerText = account.getBalance().toFixed(2);
@@ -73,7 +72,7 @@ function withdraw() {
     }
 }
 
-// Simulated transfer function (no other account class for simplicity)
+
 function transfer() {
     const transferAmount = parseFloat(document.getElementById("transfer-amount").value);
     const toAccount = document.getElementById("transfer-account").value;
@@ -99,5 +98,5 @@ function transfer() {
     document.getElementById("transfer-account").value = '';
 }
 
-// Initialize display on page load
+
 updateDisplay();
